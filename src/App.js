@@ -7,15 +7,15 @@ import { MainComponent } from './MainComponent';
 const WORKING_URL = 'http://localhost:3010/';
 // const NOT_WORKING_URL = 'https://www.aesop.com/au/';
 
-const rest = axios.create({
-    baseURL: WORKING_URL,
-    responseType: 'text',
-});
-
 function App() {
     const [data, setData] = useState(null);
 
     useEffect(() => {
+        const rest = axios.create({
+            baseURL: WORKING_URL,
+            responseType: 'text',
+        });
+
         if (!data) {
             rest.get('/api/v1/nav/shop/').then(res => {
                 console.log(res);

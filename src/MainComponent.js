@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Drawer from '@material-ui/core/Drawer';
 
-const ItemDisplay = ({ item }) => (
+export const ItemDisplay = ({ item }) => (
 	<div
 		style={{
 			padding: '10px',
@@ -17,6 +17,8 @@ const ItemDisplay = ({ item }) => (
 			item.variants &&
 			item.variants.map(variant => (
 				<div
+					key={variant.sku}
+					data-testid="variant-show"
 					style={{
 						padding: '10px',
 						minWidth: '360px',
