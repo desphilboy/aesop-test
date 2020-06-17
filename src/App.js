@@ -1,7 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
 import axios from 'axios';
-import { PSpinner } from './spinners.js';
+import { CircularProgress} from '@material-ui/core';
+import { MainComponent } from './MainComponent';
+
+
 const WORKING_URL = 'https://randomuser.me/api/';
 // const NOT_WORKING_URL = 'https://www.aesop.com/au/api/v1/nav/shop';
 
@@ -11,9 +14,7 @@ const rest = axios.create({
 });
 
 
- const MainComponent = ({ data }) => {
-  return !data ? <PSpinner/> : <div>{JSON.stringify(data)}</div>
- }
+ 
 
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
       }
     });
 
-return <MainComponent data={data}/>;
+return !data ? <CircularProgress /> : <MainComponent data={data}/>;
 }
 
 export default App;
