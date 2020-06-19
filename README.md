@@ -1,3 +1,6 @@
+aesop code test for front end developer
+www.aesop.com/au
+
 you need node to be installed in your computer.
 clone the repo and go to the folder of project.
 
