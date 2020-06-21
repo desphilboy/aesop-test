@@ -1,5 +1,23 @@
+
+
 aesop code test for front end developer
 www.aesop.com/au
+
+echnical Assessment for Frontend Developer:
+ 
+REQUIREMENT:
+ 
+Using the endpoint https://www.aesop.com/au/api/v1/nav/shop, build a react application to display a list of products grouped by categories and subcategories in an accordion UI, which
+expands and contracts on click.
+ 
+Clicking on the product item should open up a panel sliding in from the left side of the screen, which displays the variants of the product in an accordion format.
+Clicking on the variant should expand/contract the accordion and display the respective information to that particular variant of the product.
+ 
+Commit your code to a GitHub repository as you develop, so we can see how you progressed and share with github/andrwchang
+ 
+Please make sure that you have unit testing coverage.
+  
+Good luck!
 
 you need node to be installed in your computer.
 clone the repo and go to the folder of project.
